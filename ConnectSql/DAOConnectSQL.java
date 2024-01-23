@@ -13,7 +13,7 @@ public class DAOConnectSQL {
     public static Connection getConnection() {
         try {            
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            con  = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;user=sa;password=261102;database=THUVIEN");
+            con  = DriverManager.getConnection("jdbc:sqlserver:");
         } catch (Exception e) {
                 System.out.println("Connect Error");
         }
